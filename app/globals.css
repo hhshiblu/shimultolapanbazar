@@ -44,11 +44,11 @@ body {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .section-sm {
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 
 /* ── Typography ── */
@@ -534,7 +534,7 @@ h1, h2, h3, h4, h5 {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
-  padding: 4rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -553,7 +553,7 @@ h1, h2, h3, h4, h5 {
   font-size: clamp(1.4rem, 2.5vw, 1.9rem);
   color: var(--primary);
   font-weight: 700;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.2rem;
 }
 
 .hist-subtitle {

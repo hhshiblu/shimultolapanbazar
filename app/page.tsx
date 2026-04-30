@@ -9,9 +9,9 @@ const galleryImages = [
   { src: '/images/gallery-3.png', alt: 'বাজারের দৃশ্য' },
   { src: '/images/gallery-4.png', alt: 'পান চাষ' },
   { src: '/images/gallery-5.png', alt: 'পণ্য পরিমাপ' },
-  { src: '/images/gallery-6.png', alt: 'পানের বান্ডেল' },
-  { src: '/images/gallery-7.png', alt: 'ব্যবসায়ী সভা' },
-  { src: '/images/gallery-8.png', alt: 'আধুনিক বাজার' },
+  { src: '/images/bazar1.jpg', alt: 'পানের বান্ডেল' },
+  { src: '/images/bazar2.jpg', alt: 'ব্যবসায়ী সভা' },
+  { src: '/images/bazar3.jpg', alt: 'আধুনিক বাজার' },
 ];
 
 const notices = [
@@ -48,9 +48,7 @@ export default function Home() {
 
         <div className="container" style={{ position: 'relative', zIndex: 1, padding: '4rem 1.5rem' }}>
           <div className="hero-content-wrap">
-            <div style={{ display: 'inline-block', background: 'rgba(34,197,94,0.2)', border: '1px solid rgba(34,197,94,0.4)', borderRadius: '999px', padding: '0.4rem 1.2rem', marginBottom: '1.5rem' }}>
-              <span className="hero-badge-text" style={{ color: '#4ade80', fontWeight: 600, letterSpacing: '0.05em' }}>🌿 সরকারি ডিজিটাল তথ্যকেন্দ্র</span>
-            </div>
+
 
             <h1 className="hero-heading" style={{
               color: '#fff',
@@ -59,7 +57,7 @@ export default function Home() {
               fontFamily: 'Noto Serif Bengali, serif',
               lineHeight: 1.2,
             }}>
-              পান বাজার অফিশিয়াল
+              পান বাজার 
             </h1>
 
             <p className="hero-para" style={{
@@ -94,10 +92,9 @@ export default function Home() {
         <div className="container">
           <div className="stats-grid">
             {[
-              { number: '৩৮+', label: 'বছরের ইতিহাস' },
+              { number: '১৩+', label: 'বছরের ইতিহাস' },
               { number: '৫০০+', label: 'ব্যবসায়ী পরিবার' },
-              { number: '৩টি', label: 'সরকারি নথি সংরক্ষিত' },
-              { number: '১৯৮৫', label: 'থেকে চলছে' },
+              { number: '২০১৩', label: 'থেকে চলছে' },
             ].map((s) => (
               <div key={s.label} className="stat-item">
                 <span className="stat-number">{s.number}</span>
@@ -117,13 +114,13 @@ export default function Home() {
               <span className="badge badge-green" style={{ marginBottom: '1rem', display: 'inline-block' }}>বাজার সম্পর্কে</span>
               <h2 className="section-title">পান বাজার পরিচিতি</h2>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: '1rem', fontFamily: 'Noto Serif Bengali, serif', fontSize: '0.97rem' }}>
-                পান বাজার চট্টগ্রামের অন্যতম পুরনো ও ঐতিহ্যবাহী বাজারগুলোর একটি। ১৯৮৫ সাল থেকে এই বাজার স্থানীয় ব্যবসায়ীদের জীবিকার প্রধান উৎস হিসেবে কাজ করে আসছে।
+              পান বাজারটি গাইবান্ধা জেলার পলাশবাড়ী পৌর সভার একটি গুরুত্বপূর্ণ এলাকায় অবস্থিত। বাজারটি মূল সড়কের পাশে হওয়ায় যোগাযোগ অত্যন্ত সুবিধাজনক।  পরিষ্কার-পরিচ্ছন্নতা এবং নিরাপত্তার বিষয়ে কড়া নজর রাখা হয়। 
               </p>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: '1rem', fontFamily: 'Noto Serif Bengali, serif', fontSize: '0.97rem' }}>
-                বাজারটি সম্পূর্ণ সরকারি অনুমোদিত এবং নিয়মিত খাজনা পরিশোধের মাধ্যমে পরিচালিত হয়। জেলা প্রশাসকের কার্যালয়ের তত্ত্বাবধায়ে বাজারের সকল কার্যক্রম পরিচালিত হচ্ছে।
+              আশেপাশের কয়েকটি উপজেলা থেকে প্রতিদিন ব্যবসায়ী ও ক্রেতারা এখানে আসেন। বাজারের পরিবেশ সুশৃঙ্খল এবং স্থানীয় সমবায় সমিতির অধীনে পরিচালিত হয়।বাজারে প্রতিদিন গড়ে ৫০০ থেকে ৮০০ জন ক্রেতা আসেন । 
               </p>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: '1.5rem', fontFamily: 'Noto Serif Bengali, serif', fontSize: '0.97rem' }}>
-                প্রতিদিন শত শত ব্যবসায়ী ও ক্রেতা এই বাজারে আসেন। এই বাজার থেকে প্রত্যক্ষ ও পরোক্ষভাবে প্রায় ২,০০০ পরিবার উপকৃত হচ্ছে।
+              বাজারটি স্থানীয় কৃষকদের জন্য বিশেষভাবে গুরুত্বপূর্ণ। তারা সরাসরি তাদের পান পাতাসহ আরও মাছ, মাংস এবং শাক সবজি ইত্যাদি  এখানে বিক্রি করতে আসেন , ফলে মধ্যস্বত্বভোগীদের দৌরাত্ম্য কমেছে এবং ন্যায্যমূল্য নিশ্চিত হচ্ছে।
               </p>
               <Link href="/history" className="btn btn-green-outline">
                 আরও জানুন →
@@ -131,7 +128,7 @@ export default function Home() {
             </div>
             {/* image নিচে (mobile এ) */}
             <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-hover)' }}>
-              <Image src="/images/market-aerial.png" alt="পান বাজারের দৃশ্য" width={600} height={450} style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
+              <Image src="/images/bazar_img.jpg" alt="পান বাজারের দৃশ্য" width={600} height={450} style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
             </div>
           </div>
         </div>
@@ -149,7 +146,7 @@ export default function Home() {
               {
                 icon: '🕰️',
                 title: 'বাজারের ইতিহাস',
-                desc: '১৯৮৫ সাল থেকে বর্তমান পর্যন্ত বাজারের যাত্রা, পরিবর্তন এবং অর্জনের বিস্তারিত বিবরণ। আগে কার কাছে ছিল, কিভাবে পরিচালিত হতো সব জানুন।',
+                desc: '২০১৩ সাল থেকে বর্তমান পর্যন্ত বাজারের যাত্রা, পরিবর্তন এবং অর্জনের বিস্তারিত বিবরণ। আগে কার কাছে ছিল, কিভাবে পরিচালিত হতো সব জানুন।',
                 link: '/history',
                 linkText: 'ইতিহাস দেখুন',
               },

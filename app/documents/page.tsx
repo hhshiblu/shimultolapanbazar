@@ -49,7 +49,7 @@ export default function DocumentsPage() {
         <div className="container">
           <span className="badge badge-green" style={{ marginBottom: '1rem', display: 'inline-block' }}>সরকারি দলিল</span>
           <h1>সরকারি নথি ও প্রমাণাদি</h1>
-          <p>এই পেজে বাজারের সকল আইনি দলিল ও সরকারি অনুমোদনপত্র জনসাধারণের জন্য উন্মুক্তভাবে সংরক্ষিত আছে।</p>
+          <p>পলাশবাড়ী উপজেলা কৃষিপণ্য উৎপাদনকারী সমবায় সমিতি লিঃ কর্তৃক পরিচালিত বাজারের সকল আইনি দলিল ও সরকারি নথিপত্র।</p>
         </div>
       </div>
 
@@ -105,12 +105,12 @@ export default function DocumentsPage() {
                 <p className="subsection-subtitle">"কী করতে হবে, কী করা যাবে না"</p>
                 <p>ইজারাদার নিম্নলিখিত শর্ত পালনে বাধ্য থাকবেন। এই শর্তগুলো সরকারি ভূমি মন্ত্রণালয়ের ম্যানুয়াল অনুযায়ী নির্ধারিত এবং আইনিভাবে বাধ্যকর।</p>
                 <ul style={{ paddingLeft: '1.25rem', color: 'var(--text-muted)', lineHeight: 2 }}>
-                  <li>নির্ধারিত সময়ে বার্ষিক খাজনা পরিশোধ করতে হবে</li>
-                  <li>বাজারের পরিষ্কার-পরিচ্ছন্নতা বজায় রাখতে হবে</li>
-                  <li>অননুমোদিত নির্মাণ বা সংস্কার থেকে বিরত থাকতে হবে</li>
-                  <li>ব্যবসায়ীদের কাছ থেকে নির্ধারিত হারে মাসিক চাঁদা গ্রহণ করতে হবে</li>
-                  <li>প্রশাসনিক অনুমতি ব্যতিরেকে তৃতীয় পক্ষের কাছে হস্তান্তর করা যাবে না</li>
-                  <li>মাসিক ভিত্তিতে স্থানীয় প্রশাসনকে রিপোর্ট করতে হবে</li>
+                  <li>এক বছরে ১,৬০,০০০/- (এক লক্ষ ষাট হাজার) টাকা পরিশোধের প্রতিশ্রুতি।</li>
+                  <li>মেয়াদ: ১লা বৈশাখ ১৪৩৩ হইতে ৩০শে চৈত্র ১৪৩৩ বাংলা সন পর্যন্ত বলবৎ থাকিবে।</li>
+                  <li>এই জমি ২য় পক্ষ কাহারো কাছে হস্তান্তর করিতে পারিবে না।</li>
+                  <li>জমিতে পাকা বা আধা পাকা ঘর উঠানো যাইবে না।</li>
+                  <li>জমির আকার-আকৃতি পরিবর্তন করা যাইবে না।</li>
+                  <li>যে কোন পক্ষ শর্তাবলী ভঙ্গ করিলে চুক্তিপত্র বাতিল বলিয়া গণ্য হইবে।</li>
                 </ul>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function DocumentsPage() {
           </div>
 
           {/* Sub 1.4 — সরকারি তত্ত্বাবধান */}
-          <div className="zigzag-section reverse">
+          {/* <div className="zigzag-section reverse">
             <div className="zigzag-content">
               <div className="doc-subsection">
                 <h3>সরকারের অধিকার ও তত্ত্বাবধান</h3>
@@ -133,15 +133,15 @@ export default function DocumentsPage() {
             <div>
               <Image src="/images/hist-digital.png" alt="সরকারি কার্যালয়" width={600} height={450} className="zigzag-image" />
             </div>
-          </div>
+          </div> */}
 
           {/* Sub 1.5 — বর্তমান বৈধতা + PDF */}
           <div className="doc-subsection">
             <h3>চুক্তির বর্তমান অবস্থা ও বৈধতা</h3>
             <p className="subsection-subtitle">"আজ পর্যন্ত কার্যকর"</p>
-            <p>বর্তমান ইজারা চুক্তিটি সম্পূর্ণ বৈধ এবং কার্যকর। সর্বশেষ নবায়ন হয়েছে জানুয়ারি ২০২৪ সালে। আগামী নবায়নের তারিখ ডিসেম্বর ২০২৫। চুক্তির সকল শর্ত যথাযথভাবে পালিত হচ্ছে।</p>
-            <SummaryBox title="বর্তমান স্ট্যাটাস" items={['স্ট্যাটাস: ✅ সক্রিয় ও বৈধ', 'ইজারাদার: মো. আব্দুল হক', 'পরবর্তী নবায়ন: ডিসেম্বর ২০২৫']} />
-            <PdfViewer label="ইজারা চুক্তিপত্র — ২০২০–২০২৫" />
+            <p>বর্তমান ইজারা চুক্তিটি সম্পূর্ণ বৈধ এবং কার্যকর। সর্বশেষ নবায়ন হয়েছে জানুয়ারি ২০২৫ সালে। চুক্তির সকল শর্ত যথাযথভাবে পালিত হচ্ছে।</p>
+            <SummaryBox title="বর্তমান স্ট্যাটাস" items={['স্ট্যাটাস: ✅ সক্রিয় ও বৈধ', 'ইজারাদার: খাইরুল ইসলাম চাঁন মিয়া', 'নবায়ন: জানুয়ারি ২০২৫']} />
+            <PdfViewer label="ইজারা চুক্তিপত্র — ২০২৫ -" />
             <div className="doc-actions">
               <button className="btn btn-primary">⬇ ডাউনলোড করুন</button>
               <button className="btn btn-green-outline">🔗 পূর্ণস্ক্রিনে দেখুন</button>
@@ -150,10 +150,10 @@ export default function DocumentsPage() {
         </div>
       </section>
 
-      {/* ════════════════════════════════════════
+      {/* {/* ════════════════════════════════════════
           DOCUMENT 2 — খাজনা পরিশোধের প্রমাণ
       ════════════════════════════════════════ */}
-      <section className="section" style={{ background: 'var(--bg)' }}>
+      {/* <section className="section" style={{ background: 'var(--bg)' }}>
         <div className="container">
           <div style={{ borderBottom: '3px solid var(--accent)', paddingBottom: '0.5rem', marginBottom: '3rem', display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
             <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: 'var(--primary)', fontWeight: 800, fontFamily: 'Noto Serif Bengali, serif' }}>
@@ -163,7 +163,7 @@ export default function DocumentsPage() {
           </div>
 
           {/* Sub 2.1 */}
-          <div className="zigzag-section">
+          {/* <div className="zigzag-section">
             <div className="zigzag-content">
               <div className="doc-subsection">
                 <h3>খাজনার ইতিহাস ও বিবর্তন</h3>
@@ -176,10 +176,10 @@ export default function DocumentsPage() {
             <div>
               <Image src="/images/doc-payment.png" alt="খাজনা পরিশোধের রশিদ" width={600} height={450} className="zigzag-image" />
             </div>
-          </div>
+          </div> */}
 
           {/* Sub 2.2 */}
-          <div className="zigzag-section reverse">
+          {/* <div className="zigzag-section reverse">
             <div className="zigzag-content">
               <div className="doc-subsection">
                 <h3>পরিশোধের পদ্ধতি ও মাধ্যম</h3>
@@ -192,10 +192,10 @@ export default function DocumentsPage() {
             <div>
               <Image src="/images/gallery-5.png" alt="বাজারের লেনদেন" width={600} height={450} className="zigzag-image" />
             </div>
-          </div>
+          </div> */}
 
           {/* Sub 2.3 */}
-          <div className="zigzag-section">
+          {/* <div className="zigzag-section">
             <div className="zigzag-content">
               <div className="doc-subsection">
                 <h3>বার্ষিক খাজনার বিস্তারিত হিসাব (২০২০–২০২৪)</h3>
@@ -231,10 +231,10 @@ export default function DocumentsPage() {
             <div>
               <Image src="/images/hist-community.png" alt="বাজার পরিচালনা" width={600} height={450} className="zigzag-image" />
             </div>
-          </div>
+          </div> */}
 
           {/* Sub 2.4 — PDF */}
-          <div className="doc-subsection">
+          {/* <div className="doc-subsection">
             <h3>রশিদ ও প্রমাণপত্রের সংকলন</h3>
             <p>প্রতিটি পরিশোধের বিপরীতে সরকারি ট্রেজারি রশিদ (TR) সংগ্রহ করা হয়েছে। রশিদের নম্বর, তারিখ ও পরিমাণ নিচের PDF দলিলে স্পষ্টভাবে উল্লেখ আছে এবং যেকোনো সময় যাচাই করা যাবে।</p>
             <SummaryBox title="সর্বশেষ পরিশোধ" items={['পরিমাণ: ৳ ১,২০,০০০', 'তারিখ: ১০ জানুয়ারি ২০২৪', 'ব্যাংক: সোনালী ব্যাংক, মতিঝিল শাখা']} />
@@ -243,9 +243,9 @@ export default function DocumentsPage() {
               <button className="btn btn-primary">⬇ ডাউনলোড করুন</button>
               <button className="btn btn-green-outline">🔗 পূর্ণস্ক্রিনে দেখুন</button>
             </div>
-          </div>
-        </div>
-      </section>
+          </div> */}
+        {/* </div> */}
+      {/* // </section>  */}
 
       {/* ════════════════════════════════════════
           DOCUMENT 3 — সরকারি অনুমোদন
@@ -254,20 +254,21 @@ export default function DocumentsPage() {
         <div className="container">
           <div style={{ borderBottom: '3px solid var(--accent)', paddingBottom: '0.5rem', marginBottom: '3rem', display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
             <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: 'var(--primary)', fontWeight: 800, fontFamily: 'Noto Serif Bengali, serif' }}>
-              ৩. সরকারি অনুমোদনপত্র
+             সরকারি অনুমোদনপত্র
             </h2>
             <span className="badge badge-green">Public Copy</span>
           </div>
+          
 
           {/* Sub 3.1 */}
           <div className="zigzag-section">
             <div className="zigzag-content">
               <div className="doc-subsection">
-                <h3>অনুমোদনের প্রক্রিয়া</h3>
-                <p className="subsection-subtitle">"কিভাবে সরকারি অনুমোদন পাওয়া গেল"</p>
-                <p>সরকারি অনুমোদন লাভের জন্য একটি নির্ধারিত প্রক্রিয়া অনুসরণ করা হয়েছে। প্রথমে স্থানীয় ইউনিয়ন পরিষদ থেকে প্রাথমিক অনুমতি নেওয়া হয়, এরপর উপজেলা নির্বাহী অফিসার (UNO) -এর প্রতিবেদন সংযুক্ত করে জেলা প্রশাসক বরাবর আবেদন করা হয়।</p>
-                <p>আবেদনের সাথে বাজারের জমির দলিল, মালিকানার প্রমাণ, আগের ইজারা চুক্তি ও প্রস্তাবিত পরিচালনা পরিকল্পনা জমা দেওয়া হয়। সমস্ত নথি যাচাই করে জেলা প্রশাসক অনুমোদনপত্র ইস্যু করেন।</p>
-                <SummaryBox title="অনুমোদন প্রক্রিয়া" items={['ধাপ ১: ইউপি অনুমতি', 'ধাপ ২: UNO প্রতিবেদন', 'ধাপ ৩: DC Office অনুমোদন']} />
+                <h3>অনুমোদন ২য় পক্ষে</h3>
+                <p>পলাশবাড়ী উপজেলা কৃষিপন্য উৎপাদনকারী সমবায় সমিতি লিঃ এর পক্ষে ছোট শিমুলতলা পান বাজারটি ২০২৪ ইং সালের আগষ্ট থেকে অদ্যবধি আমরা পাঁচটি গ্রামের পান চাষীদেরকে নিয়ে বাজারটি পরিচালনা করে আসিতেছি। পান বাজারের জমিটি হিজলগাড়ী গ্রামের মোঃ শফিউল ইসলাম ও মোঃ সুজাউজ্জামান এর কাছ থেকে লিজ নিয়ে বাজারটি পরিচালনা করে আসিতেছি। আজ পর্যন্ত আমাদের উক্ত বাজার পরিচালনার মধ্যে কোন প্রকার শৃঙ্খলা ভঙ্গ হয়নি। বর্তমানে একটি কুচক্রী মহল বাজারটি অতীত স্বৈরাচারী কায়দায় এলাকাবাসীর কাছ থেকে ছিনিয়ে নিতে চাচ্ছে। যদি আবারও স্বৈরাচারের দোষরেরা বাজারটি দখলে নিতে চায়, তাহলে পান চাষী ও ব্যবসায়ীদের নিরাপত্তার বিঘ্ন ঘটতে পারে। যেহেতু উক্ত বাজার থেকে আমরা ইতিপূর্বে অনেক সামাজিক উন্নয়নমূলক কাজ করে যাচ্ছি। উক্ত কাজগুলি একটি কুচক্রি মহলের গাত্রদাহ হয়েছে। কারণ ২৪ পূর্ববর্তী এই বাজারটি তারা বিভিন্ন ভাবে স্বৈরাচারী কায়দায় উক্ত জমিদাতার কাছ থেকে লিজ নেওয়ার নাম করে তাদেরকে শুধু প্রলোভন দেওয়া হয়েছে।</p>
+                <p> বিধায় উক্ত জমিদাতাগন আমাদের এই পলাশবাড়ী উপজেলা কৃষিপন্য উৎপাদনকারী সমবায় সমিতি লিঃ এর কাছে নিরাপদ মনে করেন দেন। 
+                বিধায়, আবারো ০১/০১/১৪৩৩ বঙ্গাব্দ থেকে ৩০/১২/১৪৩৩ বঙ্গাব্দ পর্যন্ত উক্ত সমিতির কাছে আবারো লিজ দেন।</p>
+                <SummaryBox title="অনুমোদন" items={['স্বাক্ষর: মোঃ খাইরুল ইসলাম', 'নিবন্ধন নং- ২০২৫.১.৩০.৩২৬৭.০১৩৮']} />
               </div>
             </div>
             <div>
@@ -279,11 +280,12 @@ export default function DocumentsPage() {
           <div className="zigzag-section reverse">
             <div className="zigzag-content">
               <div className="doc-subsection">
-                <h3>অনুমোদনকারী কর্তৃপক্ষ</h3>
+                <h3>অনুমোদনকারী কর্তৃপক্ষ ১ম পক্ষ</h3>
                 <p className="subsection-subtitle">"কে অনুমোদন দিয়েছেন"</p>
-                <p>এই অনুমোদনপত্রটি জেলা প্রশাসক, চট্টগ্রাম-এর কার্যালয় থেকে প্রদান করা হয়েছে। স্বাক্ষরিত হয়েছে অতিরিক্ত জেলা প্রশাসক (রাজস্ব) কর্তৃক। অনুমোদনটি বাংলাদেশ সরকারের ভূমি ব্যবস্থাপনা ম্যানুয়াল ২০১০ অনুযায়ী প্রদত্ত।</p>
-                <p>অনুমোদনপত্রে সরকারি সিল, স্বাক্ষর এবং রেফারেন্স নম্বর রয়েছে যা সরকারি পোর্টালে যাচাই করা সম্ভব।</p>
-                <SummaryBox title="কর্তৃপক্ষের বিবরণ" items={['কর্তৃপক্ষ: জেলা প্রশাসকের কার্যালয়', 'স্বাক্ষরকারী: অতিরিক্ত জেলা প্রশাসক (রাজস্ব)', 'রেফারেন্স: DC/REV/2024/445']} />
+                <p>
+                কষ্য দখলের স্বত্ত্ব বিশিষ্ট জমি-জমার লিজপত্র মিদং লিখিতং কার্যাঙ্গে আমার সাংসারিক দেনা পাওনা পরিশোধের জন্য টাকার বিশেষ প্রয়োজন হওয়ায় অন্য কোন উপায় না থাকায় আমার পৈত্রিক নিজ স্বত্ব দখলীয় বিশিষ্ট জমির মধ্যে হইতে ছোট শিমুলতলা মৌজার পলাশবাড়ী- ঘোড়াঘাট পাকা রাস্তার উত্তর পার্শ্বে সীমানা হইতে ১৫ ফুট পর উত্তরে ৯০ ফুট, পূর্ব পার্শ্বে সীমানা থেকে ১৫ ফুট পর এবং পশ্চিম পার্শ্বে ১৫ ফুট পর ৮০ ফুট জমি লিজ দেওয়ার প্রস্তাব করিলে আপনারা লিজ চুক্তিতে রাজী হইলে উভয় পক্ষ নিম্নরূপ শর্তে চুক্তিবদ্ধ হইলাম।</p>
+              
+                <SummaryBox title="কর্তৃপক্ষের বিবরণ" items={['কর্তৃপক্ষ: মোঃ শফিকুল ইসলাম', 'কর্তৃপক্ষ : মোঃ সুজাউৎজ্জামান', 'নিবন্ধন নং- ২০২৫.১.৩০.৩২৬৭.০১৩৮']} />
               </div>
             </div>
             <div>
@@ -292,7 +294,7 @@ export default function DocumentsPage() {
           </div>
 
           {/* Sub 3.3 */}
-          <div className="zigzag-section">
+          {/* <div className="zigzag-section">
             <div className="zigzag-content">
               <div className="doc-subsection">
                 <h3>অনুমোদনের শর্ত ও সীমাবদ্ধতা</h3>
@@ -313,7 +315,7 @@ export default function DocumentsPage() {
           </div>
 
           {/* Sub 3.4 */}
-          <div className="zigzag-section reverse">
+          {/* <div className="zigzag-section reverse">
             <div className="zigzag-content">
               <div className="doc-subsection">
                 <h3>আইনি বৈধতা ও আদালতের স্বীকৃতি</h3>
@@ -326,10 +328,10 @@ export default function DocumentsPage() {
             <div>
               <Image src="/images/doc-lease.png" alt="আইনি নথি" width={600} height={450} className="zigzag-image" />
             </div>
-          </div>
+          </div> */} 
 
           {/* Sub 3.5 — PDF */}
-          <div className="doc-subsection">
+          {/* <div className="doc-subsection">
             <h3>নবায়ন পদ্ধতি ও বর্তমান মেয়াদ</h3>
             <p className="subsection-subtitle">"কবে নবায়ন হয়েছে, কবে হবে"</p>
             <p>অনুমোদনপত্রটি প্রতি বছর নবায়ন করা হয়। সর্বশেষ নবায়ন হয়েছে ফেব্রুয়ারি ২০২৪ সালে। পরবর্তী নবায়নের নির্ধারিত তারিখ ফেব্রুয়ারি ২০২৫। সময়মতো নবায়ন না করলে অনুমোদন স্বয়ংক্রিয়ভাবে বাতিল বলে গণ্য হবে।</p>
@@ -339,7 +341,7 @@ export default function DocumentsPage() {
               <button className="btn btn-primary">⬇ ডাউনলোড করুন</button>
               <button className="btn btn-green-outline">🔗 পূর্ণস্ক্রিনে দেখুন</button>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
