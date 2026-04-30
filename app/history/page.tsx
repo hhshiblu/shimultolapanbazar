@@ -24,7 +24,7 @@ export default function HistoryPage() {
       {/* ══ SECTION A — ভূমিকা ══ */}
       <section className="section" style={{ background: 'var(--surface)' }}>
         <div className="container">
-          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-hover)', position: 'relative', aspectRatio: '16 / 10', maxHeight: '420px' }}>
+          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-hover)', position: 'relative', aspectRatio: '29 / 12', maxHeight: '420px' }}>
             <Image src="/images/bazar.png" alt="পান বাজারের ঐতিহাসিক দৃশ্য"  fill style={{objectFit: 'cover'  }} />
             <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to right, rgba(11,61,46,0.75) 0%, transparent 60%)' }} />
             <div className='md:block hidden' style={{ position: 'absolute', top: '60%', left: '2.5rem', transform: 'translateY(-50%)', maxWidth: '420px' }}>
