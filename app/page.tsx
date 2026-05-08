@@ -4,21 +4,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const galleryImages = [
-  { src: '/images/gallery-1.png', alt: 'পান পাতার স্তূপ' },
-  { src: '/images/gallery-2.png', alt: 'পান বিক্রেতা' },
-  { src: '/images/gallery-3.png', alt: 'বাজারের দৃশ্য' },
-  { src: '/images/gallery-4.png', alt: 'পান চাষ' },
-  { src: '/images/gallery-5.png', alt: 'পণ্য পরিমাপ' },
+  { src: '/images/gallery-1.jpg', alt: 'পান পাতার স্তূপ' },
+  { src: '/images/gallery-2.jpg', alt: 'পান পাতার' },
+  { src: '/images/gallery-3.jpg', alt: 'বাজারের দৃশ্য' },
+  { src: '/images/gallery-4.jpg', alt: 'পান বাজার' },
+  { src: '/images/gallery-5.jpg', alt: 'পণ্য পরিমাপ' },
+  { src: '/images/gallery-6.jpg', alt: 'বাজারের দৃশ্য' },
   { src: '/images/bazar1.jpg', alt: 'পানের বান্ডেল' },
   { src: '/images/bazar2.jpg', alt: 'ব্যবসায়ী সভা' },
   { src: '/images/bazar3.jpg', alt: 'আধুনিক বাজার' },
 ];
 
-const notices = [
-  { icon: '📢', text: '২০২৪ সালের বার্ষিক ইজারা নবায়ন সম্পন্ন হয়েছে। সকল নথিপত্র হালনাগাদ করা হয়েছে।', date: '১৫ জানুয়ারি ২০২৪', tag: 'নতুন' },
-  { icon: '📢', text: 'বাজারের নতুন ব্যবস্থাপনা কমিটি গঠিত হয়েছে। আগামী মাস থেকে নতুন নিয়মকানুন কার্যকর হবে।', date: '০৩ মার্চ ২০২৪', tag: '' },
-  { icon: '📢', text: 'সকল ব্যবসায়ীদের সরকারি লাইসেন্স নবায়নের অনুরোধ করা হচ্ছে। সময়সীমা: ৩০ জুন ২০২৪।', date: '২০ এপ্রিল ২০২৪', tag: '' },
-];
+
 
 export default function Home() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -152,15 +149,15 @@ export default function Home() {
               },
               {
                 icon: '📄',
-                title: 'সরকারি নথিপত্র',
-                desc: 'ইজারা চুক্তিপত্র, খাজনা পরিশোধের রশিদ, সরকারি অনুমোদনপত্রসহ সকল দলিল এখানে সংরক্ষিত ও ডাউনলোডযোগ্য।',
+                title: 'লিজ সংক্রান্ত নথি দেখুন',
+                desc: 'লিজ সংক্রান্ত চুক্তিপত্র,অনুমোদনপত্রসহ সকল প্রয়োজনীয় দলিল এখানে সংরক্ষিত ও ডাউনলোডযোগ্য।',
                 link: '/documents',
                 linkText: 'নথি দেখুন',
               },
               {
                 icon: '🏪',
                 title: 'বর্তমান ব্যবস্থাপনা',
-                desc: 'বর্তমান ইজারাধারী, পরিচালনা পদ্ধতি, ব্যবসায়ীদের তালিকা এবং বাজারের দৈনন্দিন কার্যক্রমের সকল তথ্য এখানে আছে।',
+                desc: 'বর্তমানে বাজারটি বাজার পরিচালনা কমিটির সভাপতি কর্তৃক পরিচালিত হচ্ছে এবং প্রতি বছর নিয়ম অনুযায়ী লিজ নবায়ন করা হয়।',
                 link: '/history',
                 linkText: 'বিস্তারিত দেখুন',
               },
@@ -202,40 +199,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── NOTICE BOARD ── */}
-      <section className="section" style={{ background: 'var(--bg)' }}>
-        <div className="container" style={{ maxWidth: '800px' }}>
-          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-            <h2 className="section-title">📌 সর্বশেষ নোটিশ</h2>
-            <p className="section-subtitle">বাজারের সাম্প্রতিক ঘোষণা ও তথ্য</p>
-          </div>
-          <div className="card" style={{ padding: 0, overflow: 'hidden' }}>
-            <div style={{ background: 'var(--primary)', padding: '1rem 1.5rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-              <span style={{ fontSize: '1.2rem' }}>📌</span>
-              <span style={{ color: '#fff', fontWeight: 700, fontFamily: 'Noto Serif Bengali, serif' }}>নোটিশ বোর্ড</span>
-              <span className="badge badge-green" style={{ marginLeft: 'auto' }}>সক্রিয়</span>
-            </div>
-            {notices.map((n, i) => (
-              <div key={i} className="notice-item">
-                <span className="notice-icon">{n.icon}</span>
-                <div>
-                  <p style={{ fontSize: '0.93rem', color: 'var(--text)', lineHeight: 1.7, fontFamily: 'Noto Serif Bengali, serif' }}>{n.text}</p>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginTop: '0.35rem' }}>
-                    <span className="notice-date">{n.date}</span>
-                    {n.tag && <span className="badge badge-amber">{n.tag}</span>}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── TRUST STRIP ── */}
       <div className="trust-strip">
         <div className="container">
           <div className="trust-strip-inner">
-            {['✅ সরকার অনুমোদিত বাজার', '📄 সকল নথি প্রকাশিত', '🔒 তথ্য আইনিভাবে সুরক্ষিত', '⚖️ বিরোধ নিষ্পত্তিযোগ্য'].map((item) => (
+            {['✅ অনুমোদিত বাজার', '📄 সকল নথি প্রকাশিত', '🔒 তথ্য আইনিভাবে সুরক্ষিত', '⚖️ বিরোধ নিষ্পত্তিযোগ্য'].map((item) => (
               <div key={item} className="trust-item">{item}</div>
             ))}
           </div>

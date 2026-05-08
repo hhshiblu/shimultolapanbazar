@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import PdfActionButtons from './PdfActionButtons';
 
 export const metadata: Metadata = {
-  title: 'সরকারি নথি ও প্রমাণাদি | পান বাজার অফিশিয়াল',
+  title: 'লিজ সংক্রান্ত চুক্তিপত্র | পান বাজার অফিশিয়াল',
   description: 'পান বাজারের সকল সরকারি নথি — ইজারা চুক্তিপত্র, খাজনা পরিশোধের প্রমাণ ও সরকারি অনুমোদনপত্র।',
 };
 
@@ -48,19 +49,19 @@ export default function DocumentsPage() {
       <div className="page-hero">
         <div className="container">
           <span className="badge badge-green" style={{ marginBottom: '1rem', display: 'inline-block' }}>সরকারি দলিল</span>
-          <h1>সরকারি নথি ও প্রমাণাদি</h1>
-          <p>পলাশবাড়ী উপজেলা কৃষিপণ্য উৎপাদনকারী সমবায় সমিতি লিঃ কর্তৃক পরিচালিত বাজারের সকল আইনি দলিল ও সরকারি নথিপত্র।</p>
+          <h1>লিজ সংক্রান্ত চুক্তিপত্র</h1>
+          <p>পলাশবাড়ী উপজেলা কৃষিপণ্য উৎপাদনকারী সমবায় সমিতি লিঃ কর্তৃক পরিচালিত বাজারের সকল লিজ সংক্রান্ত চুক্তিপত্র।</p>
         </div>
       </div>
 
       {/* ════════════════════════════════════════
-          DOCUMENT 1 — ইজারা চুক্তিপত্র
+          DOCUMENT 1 — লিজ সংক্রান্ত চুক্তিপত্র
       ════════════════════════════════════════ */}
       <section className="section" style={{ background: 'var(--surface)' }}>
         <div className="container">
           <div style={{ borderBottom: '3px solid var(--accent)', paddingBottom: '0.5rem', marginBottom: '3rem', display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
             <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: 'var(--primary)', fontWeight: 800, fontFamily: 'Noto Serif Bengali, serif' }}>
-              ১. ইজারা চুক্তিপত্র
+              ১. লিজ সংক্রান্ত চুক্তিপত্র
             </h2>
             <span className="badge badge-green">Public Copy</span>
           </div>
@@ -71,14 +72,22 @@ export default function DocumentsPage() {
               <div className="doc-subsection">
                 <h3>চুক্তির পটভূমি</h3>
                 <p className="subsection-subtitle">"কেন এই চুক্তি করা হয়েছিল"</p>
-                <p>ইজারা চুক্তিটি বাংলাদেশ সরকারের ভূমি মন্ত্রণালয়ের নির্দেশিকা অনুযায়ী প্রস্তুত করা হয়েছে। ২০২০ সালের জানুয়ারি মাসে জেলা প্রশাসকের কার্যালয় থেকে আনুষ্ঠানিকভাবে চুক্তি সম্পাদিত হয়। এই চুক্তির মাধ্যমে ইজারাদার নির্দিষ্ট শর্তে বাজারটি পরিচালনার অধিকার লাভ করেন।</p>
-                <p>সরকারি কোষাগারে নিয়মিত রাজস্ব প্রদানে বাধ্য থাকার শর্তে এই চুক্তি সম্পাদিত হয়। চুক্তিটি বাংলাদেশের ১৮৮২ সালের সম্পত্তি হস্তান্তর আইন ও ১৯৮৪ সালের ভূমি সংস্কার অধ্যাদেশ অনুযায়ী প্রণীত।</p>
-                <SummaryBox title="সংক্ষেপে" items={['চুক্তির ধরন: সরকারি ইজারা', 'অনুমোদনকারী: জেলা প্রশাসক, চট্টগ্রাম', 'আইনি ভিত্তি: ভূমি সংস্কার অধ্যাদেশ ১৯৮৪']} />
+                <p>ছোট শিমুলতলা পান বাজারের সুষ্ঠু ব্যবস্থাপনা ও পরিচালনার ধারাবাহিকতা বজায় রাখার লক্ষ্যে এই লিজ চুক্তি সম্পাদিত হয়েছে। ২০১৩ সাল থেকে বাজারটির লিজ কার্যক্রম চালু রয়েছে এবং স্থানীয় পান চাষী ও ব্যবসায়ীদের অংশগ্রহণে বাজারটি পরিচালিত হয়ে আসছে।</p>
+                <p>হিজলগাড়ী গ্রামের জমির মালিক মোঃ শফিকুল ইসলাম ও মোঃ সুজাউজ্জামান কর্তৃক নির্ধারিত জমি পলাশবাড়ী উপজেলা কৃষিপণ্য উৎপাদনকারী সমবায় সমিতি লিমিটেড-এর নিকট লিজ প্রদান করা হয়। উভয় পক্ষের সম্মতিতে বাজারের শৃঙ্খলা, নিরাপত্তা ও ব্যবসায়িক পরিবেশ বজায় রাখার উদ্দেশ্যে এই চুক্তি সম্পাদিত হয়েছে।
+                লিজ গ্রহণের পর থেকে সমিতি বাজারের উন্নয়ন ও স্থানীয় কৃষি অর্থনীতির বিকাশে গুরুত্বপূর্ণ ভূমিকা পালন করে আসছে।</p>
+                <SummaryBox title="সংক্ষেপে" items={['চুক্তির ধরন: জমি লিজ চুক্তি', 'লিজ কার্যক্রম শুরু: ২০১৩ সাল থেকে', 'জমির অবস্থান: ছোট শিমুলতলা, পলাশবাড়ী, গাইবান্ধা','রিচালনাকারী: বর্তমান বাজার পরিচালনা কমিটি ও সমিতির সভাপতি']} />
               </div>
             </div>
-            <div>
-              <Image src="/images/doc-lease.png" alt="ইজারা চুক্তিপত্র" width={600} height={450} className="zigzag-image" />
-            </div>
+            <div className="w-full">
+  <Image
+    src="/images/bazar6.jpg"
+    alt="চুক্তিপত্র"
+    width={0}
+    height={0}
+    sizes="100vw"
+    className="w-full h-auto zigzag-image"
+  />
+</div>
           </div>
 
           {/* Sub 1.2 — মেয়াদ */}
@@ -87,23 +96,38 @@ export default function DocumentsPage() {
               <div className="doc-subsection">
                 <h3>চুক্তির মেয়াদ ও নবায়ন প্রক্রিয়া</h3>
                 <p className="subsection-subtitle">"কতদিনের জন্য, কিভাবে নবায়ন হয়"</p>
-                <p>এই চুক্তিটি ৫ বছর মেয়াদী। প্রতি অর্থবছর শেষে সরকারি মূল্যায়নের ভিত্তিতে চুক্তি নবায়ন করা হয়। নবায়নের ক্ষেত্রে প্রচলিত সরকারি হার অনুযায়ী ইজারামূল্য নির্ধারিত হয়।</p>
-                <p>ইজারাদারের অতীত রেকর্ড, নিয়মিত খাজনা পরিশোধের প্রমাণ এবং বাজার ব্যবস্থাপনার মান বিবেচনা করে নবায়নের সিদ্ধান্ত নেওয়া হয়। সময়মতো নবায়ন না হলে চুক্তি স্বয়ংক্রিয়ভাবে বাতিল বলে গণ্য হবে।</p>
-                <SummaryBox title="সংক্ষেপে" items={['মেয়াদ: ২০২০ – ২০২৫ (৫ বছর)', 'নবায়নের তারিখ: প্রতি জানুয়ারি', 'শেষ নবায়ন: জানুয়ারি ২০২৪']} />
+                <p>ছোট শিমুলতলা পান বাজারের লিজ চুক্তি প্রতি বছর নবায়ন করা হয়। বাংলা সনের নির্ধারিত সময় অনুযায়ী উভয় পক্ষের সম্মতিতে নতুন করে লিজ কার্যক্রম সম্পাদিত হয় এবং বাজার পরিচালনার দায়িত্ব হালনাগাদ করা হয়।</p>
+                <p>লিজ নবায়নের ক্ষেত্রে জমির মালিকগণের সম্মতি, বাজার পরিচালনার ধারাবাহিকতা, শৃঙ্খলা রক্ষা এবং ব্যবসায়িক পরিবেশ বজায় রাখার বিষয়গুলো বিবেচনা করা হয়। নির্ধারিত সময়ে চুক্তি নবায়ন না হলে পূর্বের লিজ কার্যকারিতা বাতিল বলে গণ্য হতে পারে।</p>
+                <SummaryBox 
+  title="সংক্ষেপে" 
+  items={[
+    'লিজ কার্যক্রম শুরু: ২০১৩ সাল',
+    'চুক্তির ধরন: বার্ষিক জমি লিজ',
+    'নবায়নের সময়: প্রতি বাংলা বছর',
+    'বর্তমান পরিচালনাকারী: পলাশবাড়ী উপজেলা কৃষিপণ্য উৎপাদনকারী সমবায় সমিতি লিমিটেড'
+  ]} 
+/>
               </div>
             </div>
-            <div>
-              <Image src="/images/gallery-8.png" alt="নবায়ন প্রক্রিয়া" width={600} height={450} className="zigzag-image" />
-            </div>
+            <div className="w-full">
+  <Image
+    src="/images/bazar5.jpg"
+    alt="চুক্তিপত্র"
+    width={0}
+    height={0}
+    sizes="100vw"
+    className="w-full h-auto zigzag-image"
+  />
+</div>
           </div>
 
           {/* Sub 1.3 — দায়িত্ব */}
           <div className="zigzag-section">
             <div className="zigzag-content">
               <div className="doc-subsection">
-                <h3>ইজারাদারের দায়িত্ব ও শর্তাবলী</h3>
+                <h3>লিজ দায়িত্ব ও শর্তাবলী</h3>
                 <p className="subsection-subtitle">"কী করতে হবে, কী করা যাবে না"</p>
-                <p>ইজারাদার নিম্নলিখিত শর্ত পালনে বাধ্য থাকবেন। এই শর্তগুলো সরকারি ভূমি মন্ত্রণালয়ের ম্যানুয়াল অনুযায়ী নির্ধারিত এবং আইনিভাবে বাধ্যকর।</p>
+                <p>লিজ নিম্নলিখিত শর্ত পালনে বাধ্য থাকবেন। এই শর্তগুলো আইনিভাবে বাধ্যকর।</p>
                 <ul style={{ paddingLeft: '1.25rem', color: 'var(--text-muted)', lineHeight: 2 }}>
                   <li>এক বছরে ১,৬০,০০০/- (এক লক্ষ ষাট হাজার) টাকা পরিশোধের প্রতিশ্রুতি।</li>
                   <li>মেয়াদ: ১লা বৈশাখ ১৪৩৩ হইতে ৩০শে চৈত্র ১৪৩৩ বাংলা সন পর্যন্ত বলবৎ থাকিবে।</li>
@@ -114,9 +138,16 @@ export default function DocumentsPage() {
                 </ul>
               </div>
             </div>
-            <div>
-              <Image src="/images/gallery-7.png" alt="বাজার ব্যবস্থাপনা" width={600} height={450} className="zigzag-image" />
-            </div>
+            <div className="w-full">
+  <Image
+    src="/images/paper2.jpg"
+    alt="চুক্তিপত্র"
+    width={0}
+    height={0}
+    sizes="100vw"
+    className="w-full h-auto zigzag-image"
+  />
+</div>
           </div>
 
           {/* Sub 1.4 — সরকারি তত্ত্বাবধান */}
@@ -139,13 +170,12 @@ export default function DocumentsPage() {
           <div className="doc-subsection">
             <h3>চুক্তির বর্তমান অবস্থা ও বৈধতা</h3>
             <p className="subsection-subtitle">"আজ পর্যন্ত কার্যকর"</p>
-            <p>বর্তমান ইজারা চুক্তিটি সম্পূর্ণ বৈধ এবং কার্যকর। সর্বশেষ নবায়ন হয়েছে জানুয়ারি ২০২৫ সালে। চুক্তির সকল শর্ত যথাযথভাবে পালিত হচ্ছে।</p>
-            <SummaryBox title="বর্তমান স্ট্যাটাস" items={['স্ট্যাটাস: ✅ সক্রিয় ও বৈধ', 'ইজারাদার: খাইরুল ইসলাম চাঁন মিয়া', 'নবায়ন: জানুয়ারি ২০২৫']} />
-            <PdfViewer label="ইজারা চুক্তিপত্র — ২০২৫ -" />
-            <div className="doc-actions">
-              <button className="btn btn-primary">⬇ ডাউনলোড করুন</button>
-              <button className="btn btn-green-outline">🔗 পূর্ণস্ক্রিনে দেখুন</button>
-            </div>
+            <p>বর্তমান  চুক্তিটি সম্পূর্ণ বৈধ এবং কার্যকর। সর্বশেষ নবায়ন হয়েছে জানুয়ারি ২০২৫ সালে। চুক্তির সকল শর্ত যথাযথভাবে পালিত হচ্ছে।</p>
+            <SummaryBox title="বর্তমান স্ট্যাটাস" items={['স্ট্যাটাস: ✅ সক্রিয় ও বৈধ','পরিচালনাকারী: খাইরুল ইসলাম চাঁন মিয়া','নবায়ন: জানুয়ারি ২০২৫'
+  ]} 
+/>
+            <PdfViewer label="চুক্তিপত্র — ২০২৫ -" />
+            <PdfActionButtons pdfUrl="/pan_hat.pdf" downloadName="pan_hat.pdf" />
           </div>
         </div>
       </section>
@@ -254,7 +284,7 @@ export default function DocumentsPage() {
         <div className="container">
           <div style={{ borderBottom: '3px solid var(--accent)', paddingBottom: '0.5rem', marginBottom: '3rem', display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
             <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: 'var(--primary)', fontWeight: 800, fontFamily: 'Noto Serif Bengali, serif' }}>
-             সরকারি অনুমোদনপত্র
+             লিজ সংক্রান্ত অনুমোদনপত্র
             </h2>
             <span className="badge badge-green">Public Copy</span>
           </div>
@@ -271,9 +301,16 @@ export default function DocumentsPage() {
                 <SummaryBox title="অনুমোদন" items={['স্বাক্ষর: মোঃ খাইরুল ইসলাম', 'নিবন্ধন নং- ২০২৫.১.৩০.৩২৬৭.০১৩৮']} />
               </div>
             </div>
-            <div>
-              <Image src="/images/doc-govt.png" alt="সরকারি অনুমোদনপত্র" width={600} height={450} className="zigzag-image" />
-            </div>
+            <div className="w-full">
+  <Image
+    src="/images/paper1.jpg"
+    alt="চুক্তিপত্র"
+    width={0}
+    height={0}
+    sizes="100vw"
+    className="w-full h-auto zigzag-image"
+  />
+</div>
           </div>
 
           {/* Sub 3.2 */}
@@ -288,9 +325,16 @@ export default function DocumentsPage() {
                 <SummaryBox title="কর্তৃপক্ষের বিবরণ" items={['কর্তৃপক্ষ: মোঃ শফিকুল ইসলাম', 'কর্তৃপক্ষ : মোঃ সুজাউৎজ্জামান', 'নিবন্ধন নং- ২০২৫.১.৩০.৩২৬৭.০১৩৮']} />
               </div>
             </div>
-            <div>
-              <Image src="/images/hist-digital.png" alt="সরকারি কার্যালয়" width={600} height={450} className="zigzag-image" />
-            </div>
+            <div className="w-full">
+  <Image
+    src="/images/paper3.jpg"
+    alt="চুক্তিপত্র"
+    width={0}
+    height={0}
+    sizes="100vw"
+    className="w-full h-auto zigzag-image"
+  />
+</div>
           </div>
 
           {/* Sub 3.3 */}

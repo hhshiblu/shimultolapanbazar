@@ -76,10 +76,10 @@ export default function HistoryPage() {
         <div className="container">
           <div className="hist-section reverse">
             <div>
-              <Image src="/images/hist-old-market.png" alt="বাজার প্রতিষ্ঠার ইতিহাস" width={600} height={450} style={{ width: '100%', borderRadius: '12px', boxShadow: 'var(--shadow)', objectFit: 'cover', aspectRatio: '4/3' }} />
+              <Image src="/images/gallery7.jpg" alt="বাজার প্রতিষ্ঠার ইতিহাস" width={600} height={450} style={{ width: '100%', borderRadius: '12px', boxShadow: 'var(--shadow)', objectFit: 'cover', aspectRatio: '4/3' }} />
             </div>
             <div>
-              <span className="badge badge-amber" style={{ marginBottom: '0.25rem', display: 'inline-block' }}>১৯৮৫</span>
+            
               <h2>প্রতিষ্ঠার ইতিহাস</h2>
               <p className="hist-subtitle">"২০১৩ সালে একটি স্বপ্নের শুরু"</p>
               <p>২০১৩ সালে স্থানীয় কয়েকজন উদ্যোক্তার অদম্য ইচ্ছা ও পরিশ্রমের ফলে পান বাজারের যাত্রা শুরু হয়। সে সময় মাত্র ৫টি ছোট দোকান নিয়ে যাত্রা শুরু হলেও ধীরে ধীরে এই সংখ্যা বৃদ্ধি পেয়ে আজ ৭০+ ছাড়িয়েছে।</p>
@@ -90,15 +90,15 @@ export default function HistoryPage() {
         </div>
       </section>
 
-      {/* ══ SECTION D — ইজারা ব্যবস্থার বিবর্তন (আগের ইজারাধারী) ══ */}
+      {/* ══ SECTION D — লিজ ব্যবস্থার বিবর্তন (আগের লিজধারী) ══ */}
       <section style={{ background: 'var(--bg)', padding: '1rem 0', borderBottom: '1px solid var(--border)' }}>
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '0.25rem' }}>
-            <h2 className="section-title">ইজারা ব্যবস্থার বিবর্তন</h2>
+            <h2 className="section-title">লিজ ব্যবস্থার বিবর্তন</h2>
             <p className="hist-subtitle">"আগে কার কাছে ছিল — কিভাবে পরিচালিত হতো"</p>
             <p style={{ color: 'var(--text-muted)', maxWidth: '650px', margin: '0 auto', lineHeight: 1.8, fontFamily: 'Noto Serif Bengali, serif', fontSize: '0.97rem' }}>
-              প্রতিটি যুগেই বাজারটি সরকারি নির্দেশনা মেনে পরিচালিত হয়েছে। ইজারা হস্তান্তর সর্বদাই আইনের মাধ্যমে এবং স্বচ্ছ প্রক্রিয়ায় সম্পন্ন হয়েছে।
-            </p>
+              প্রতিটি যুগেই বাজারটি সরকারি নির্দেশনা মেনে পরিচালিত হয়েছে। লিজ হস্তান্তর সর্বদাই আইনের মাধ্যমে এবং স্বচ্ছ প্রক্রিয়ায় সম্পন্ন হয়েছে।
+            </p>  
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', marginBottom: '0.25rem' }}>
@@ -120,7 +120,8 @@ export default function HistoryPage() {
                   <h3 style={{ fontFamily: 'Noto Serif Bengali, serif', color: 'var(--primary)', fontSize: '1.1rem' }}>মো. খাইরুল ইসলাম চাঁন-</h3>
                   <span className="badge badge-green">বর্তমান</span>
                 </div>
-                <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>২০২5 – বর্তমান | বর্তমান ইজারাধারী ও পরিচালক</p>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>২০২৫
+                    – বর্তমান | বর্তমান লিজধারী ও পরিচালক</p>
               </div>
             </div>
           </div>
@@ -142,7 +143,7 @@ export default function HistoryPage() {
               <p>বাজারটি স্থানীয় অর্থনীতিতে বার্ষিক কোটি টাকারও বেশি অবদান রাখছে। এছাড়া স্থানীয় কৃষকরা সরাসরি তাদের পান পাতা এখানে বিক্রি করতে পারেন, ফলে মধ্যস্বত্বভোগীদের দৌরাত্ম্য কমেছে।</p>
               <p>বাজারের আয়ের একটি অংশ স্থানীয় উন্নয়নমূলক কাজে ব্যয় করা হয়। রাস্তা সংস্কার, স্কুলে অনুদান এবং দরিদ্র ব্যবসায়ীদের সহায়তায় বাজার কমিটি নিয়মিত অবদান রাখে।</p>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1.25rem' }}>
-                {[['২,০০০+', 'পরিবার উপকৃত'], ['100+', 'সক্রিয় ব্যবসায়ী'], ['13+', 'বছরের ইতিহাস'], ['50 লক্ষ+', 'বার্ষিক অবদান']].map(([num, label]) => (
+                {[['২,০০০+', 'পরিবার উপকৃত'], ['১০০+', 'সক্রিয় ব্যবসায়ী'], ['১৩+', 'বছরের ইতিহাস'], ['৫০ লক্ষ+', 'বার্ষিক অবদান']].map(([num, label]) => (
                   <div key={label} style={{ background: 'var(--bg)', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid var(--border)' }}>
                     <div style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--primary)', fontFamily: 'Noto Serif Bengali, serif' }}>{num}</div>
                     <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginTop: '0.2rem' }}>{label}</div>

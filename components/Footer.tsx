@@ -13,7 +13,7 @@ export default function Footer() {
             </div>
             <p style={{ fontSize: '0.85rem', lineHeight: 1.7, color: 'rgba(255,255,255,0.55)' }}>
               একটি স্বচ্ছ ও বিশ্বাসযোগ্য ডিজিটাল তথ্যকেন্দ্র।
-              বাজারের সকল সরকারি তথ্য এখানে সংরক্ষিত।
+              বাজারের সকল  তথ্য এখানে সংরক্ষিত।
             </p>
           </div>
 
@@ -25,7 +25,7 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               {[
                 { href: '/', label: 'হোম' },
-                { href: '/documents', label: 'সরকারি নথি' },
+                { href: '/documents', label: 'নথি দেখুন' },
                 { href: '/history', label: 'বাজারের ইতিহাস' },
               ].map((link) => (
                 <Link key={link.href} href={link.href} style={{ color: 'rgba(255,255,255,0.6)', textDecoration: 'none', fontSize: '0.88rem', fontFamily: 'Noto Serif Bengali, serif', transition: 'color 0.2s' }}>
@@ -41,7 +41,7 @@ export default function Footer() {
               বিশ্বস্ততার প্রতিশ্রুতি
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              {['✅ সরকার অনুমোদিত', '📄 নথি প্রকাশিত', '🔒 তথ্য সুরক্ষিত', '⚖️ আইনিভাবে বৈধ'].map((item) => (
+              {['✅ অনুমোদিত', '📄 নথি প্রকাশিত', '🔒 তথ্য সুরক্ষিত', '⚖️ আইনিভাবে বৈধ'].map((item) => (
                 <span key={item} style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem' }}>{item}</span>
               ))}
             </div>
@@ -63,7 +63,7 @@ export default function Footer() {
             </p>
           </div>
           <p style={{ textAlign: 'center', color: 'rgba(255,255,255,0.35)', fontSize: '0.8rem' }}>
-            © ২০২৪ পান বাজার অফিশিয়াল। সর্বস্বত্ব সংরক্ষিত।
+            © ২০২৫ পান বাজার অফিশিয়াল। সর্বস্বত্ব সংরক্ষিত।
           </p>
         </div>
       </div>
