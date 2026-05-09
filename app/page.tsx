@@ -198,7 +198,26 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      {/* ── VIDEO SECTION ── */}
+      <section className="section" style={{ background: 'var(--bg)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+            <h2 className="section-title">বাজারের ভিডিও</h2>
+            <p className="section-subtitle">আমাদের বাজারের একটি বাস্তব দৃশ্য</p>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-hover)' }}>
+            <video 
+              controls 
+              preload="metadata"
+              poster="/images/bazar_img.jpg"
+              style={{ width: '100%', maxWidth: '900px', borderRadius: '16px', display: 'block' }}
+            >
+              <source src="/vedios/bazar_vedio.mp4" type="video/mp4" />
+              আপনার ব্রাউজার ভিডিও সমর্থন করে না।
+            </video>
+          </div>
+        </div>
+      </section>
 
       {/* ── TRUST STRIP ── */}
       <div className="trust-strip">
