@@ -53,10 +53,10 @@ export default function Navbar() {
             <span style={{ fontSize: '1.6rem' }}>🌿</span>
             <div>
               <div style={{ color: '#fff', fontWeight: 700, fontSize: '1.05rem', lineHeight: 1.2, fontFamily: 'Noto Serif Bengali, serif' }}>
-                পান বাজার অফিশিয়াল
+                পান বাজার
               </div>
               <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.7rem', letterSpacing: '0.05em' }}>
-                Pan Bazar Official
+                Pan Bazar
               </div>
             </div>
           </Link>

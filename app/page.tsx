@@ -12,7 +12,7 @@ const galleryImages = [
   { src: '/images/gallery-6.jpg', alt: 'বাজারের দৃশ্য' },
   { src: '/images/bazar1.jpg', alt: 'পানের বান্ডেল' },
   { src: '/images/bazar2.jpg', alt: 'ব্যবসায়ী সভা' },
-  { src: '/images/bazar3.jpg', alt: 'আধুনিক বাজার' },
+  { src: '/images/paper.jpg', alt: 'আবেদন ফরম' },
 ];
 
 
@@ -54,7 +54,7 @@ export default function Home() {
               fontFamily: 'Noto Serif Bengali, serif',
               lineHeight: 1.2,
             }}>
-              পান বাজার 
+              পান বাজার
             </h1>
 
             <p className="hero-para" style={{
@@ -111,13 +111,13 @@ export default function Home() {
               <span className="badge badge-green" style={{ marginBottom: '1rem', display: 'inline-block' }}>বাজার সম্পর্কে</span>
               <h2 className="section-title">পান বাজার পরিচিতি</h2>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: '1rem', fontFamily: 'Noto Serif Bengali, serif', fontSize: '0.97rem' }}>
-              পান বাজারটি গাইবান্ধা জেলার পলাশবাড়ী পৌর সভার একটি গুরুত্বপূর্ণ এলাকায় অবস্থিত। বাজারটি মূল সড়কের পাশে হওয়ায় যোগাযোগ অত্যন্ত সুবিধাজনক।  পরিষ্কার-পরিচ্ছন্নতা এবং নিরাপত্তার বিষয়ে কড়া নজর রাখা হয়। 
+                পান বাজারটি গাইবান্ধা জেলার পলাশবাড়ী পৌর সভার একটি গুরুত্বপূর্ণ এলাকায় অবস্থিত। বাজারটি মূল সড়কের পাশে হওয়ায় যোগাযোগ অত্যন্ত সুবিধাজনক।  পরিষ্কার-পরিচ্ছন্নতা এবং নিরাপত্তার বিষয়ে কড়া নজর রাখা হয়।
               </p>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: '1rem', fontFamily: 'Noto Serif Bengali, serif', fontSize: '0.97rem' }}>
-              আশেপাশের কয়েকটি উপজেলা থেকে প্রতিদিন ব্যবসায়ী ও ক্রেতারা এখানে আসেন। বাজারের পরিবেশ সুশৃঙ্খল এবং স্থানীয় সমবায় সমিতির অধীনে পরিচালিত হয়।বাজারে প্রতিদিন গড়ে ৫০০ থেকে ৮০০ জন ক্রেতা আসেন । 
+                আশেপাশের কয়েকটি উপজেলা থেকে প্রতিদিন ব্যবসায়ী ও ক্রেতারা এখানে আসেন। বাজারের পরিবেশ সুশৃঙ্খল এবং স্থানীয় সমবায় সমিতির অধীনে পরিচালিত হয়।বাজারে প্রতিদিন গড়ে ৫০০ থেকে ৮০০ জন ক্রেতা আসেন ।
               </p>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: '1.5rem', fontFamily: 'Noto Serif Bengali, serif', fontSize: '0.97rem' }}>
-              বাজারটি স্থানীয় কৃষকদের জন্য বিশেষভাবে গুরুত্বপূর্ণ। তারা সরাসরি তাদের পান পাতাসহ আরও মাছ, মাংস এবং শাক সবজি ইত্যাদি  এখানে বিক্রি করতে আসেন , ফলে মধ্যস্বত্বভোগীদের দৌরাত্ম্য কমেছে এবং ন্যায্যমূল্য নিশ্চিত হচ্ছে।
+                বাজারটি স্থানীয় কৃষকদের জন্য বিশেষভাবে গুরুত্বপূর্ণ। তারা সরাসরি তাদের পান পাতাসহ আরও মাছ, মাংস এবং শাক সবজি ইত্যাদি  এখানে বিক্রি করতে আসেন , ফলে মধ্যস্বত্বভোগীদের দৌরাত্ম্য কমেছে এবং ন্যায্যমূল্য নিশ্চিত হচ্ছে।
               </p>
               <Link href="/history" className="btn btn-green-outline">
                 আরও জানুন →
@@ -206,8 +206,8 @@ export default function Home() {
             <p className="section-subtitle">আমাদের বাজারের একটি বাস্তব দৃশ্য</p>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-hover)' }}>
-            <video 
-              controls 
+            <video
+              controls
               preload="metadata"
               poster="/images/bazar_img.jpg"
               style={{ width: '100%', maxWidth: '900px', borderRadius: '16px', display: 'block' }}
